@@ -29,3 +29,14 @@ Route::middleware('auth')->group(function () {
     Route::post('/reservations', [AuthController::class, 'storeReservation'])->name('reservations.store');
 });
 
+/* Helper Route for Remote Migrations (Temporary helper) */
+Route::get('/run-migration', function () {
+    try {
+        \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
+        return "Database migration successfully run! All tables are set up.";
+    } catch (\Exception $e) {
+        return "Error running migration: " . $e->getMessage();
+    }
+});
+
+
