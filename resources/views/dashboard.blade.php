@@ -67,7 +67,7 @@
                             <th scope="col" class="px-6 py-4 text-left">Guests</th>
                             <th scope="col" class="px-6 py-4 text-left">Special requests</th>
                             <th scope="col" class="px-6 py-4 text-left">Status</th>
-                            <th scope="col" class="px-6 py-4 class-left"></th>
+                            <th scope="col" class="px-6 py-4 text-left"></th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-luxury-900 text-xs text-luxury-300 font-light">
